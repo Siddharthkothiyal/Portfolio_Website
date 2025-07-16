@@ -324,7 +324,7 @@ body {
 
 .neural-connections::after {
     animation-duration: 20s;
-    border-color: rgba(0, 255, 0, 0.3);
+   
 }
 
 @keyframes rotate {
@@ -340,13 +340,7 @@ body {
     animation: bounce 2s infinite;
 }
 
-.scroll-arrow {
-    width: 20px;
-    height: 20px;
-    border-right: 2px solid #00ffff;
-    border-bottom: 2px solid #00ffff;
-    transform: rotate(45deg);
-}
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
