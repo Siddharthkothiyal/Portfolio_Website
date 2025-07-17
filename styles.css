@@ -265,6 +265,12 @@ body {
     box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
 }
 
+.btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
 .btn-secondary {
     background: transparent;
     color: #ffffff;
