@@ -84,6 +84,25 @@ document.querySelectorAll('.stat-number, .skill-item, .project-card').forEach(el
     observer.observe(el);
 });
 
+// Add scroll animation
+const scrollObserverOptions = {
+  root: null,
+  threshold: 0.1,
+  rootMargin: "0px"
+};
+
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, scrollObserverOptions);
+
+document.querySelectorAll('section').forEach(section => {
+  scrollObserver.observe(section);
+});
+
 // Typing effect for hero text
 function typeWriter(element, text, speed = 100) {
     let i = 0;
