@@ -80,7 +80,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.stat-number, .skill-item, .project-card').forEach(el => {
+document.querySelectorAll('.stat-number, .skill-item, .project-card, .education-item').forEach(el => {
     observer.observe(el);
 });
 
@@ -205,7 +205,7 @@ class ParticleSystem {
                 if (distance < 100) {
                     this.ctx.save();
                     this.ctx.globalAlpha = 0.1;
-                    this.ctx.strokeStyle = '#00ffff';
+                    this.ctx.strokeStyle = '#f5cb5c';
                     this.ctx.lineWidth = 1;
                     this.ctx.beginPath();
                     this.ctx.moveTo(particle.x, particle.y);
@@ -268,7 +268,7 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
 
 // Add scroll-triggered animations
 function addScrollAnimations() {
-    const elements = document.querySelectorAll('.project-card, .skill-category, .contact-item');
+    const elements = document.querySelectorAll('.project-card, .skill-category, .contact-item, .education-item');
     
     const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -319,7 +319,7 @@ window.addEventListener('scroll', updateActiveNav);
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
-        color: #00ffff !important;
+        color: #f5cb5c !important;
         text-shadow: 0 0 10px rgba(0, 255, 255, 0.5) !important;
     }
     .nav-link.active::after {

@@ -1,11 +1,11 @@
 :root {
-  --bg-primary: #0a192f;
-  --bg-secondary: #112240;
-  --text-primary: #ccd6f6;
-  --text-secondary: #8892b0;
-  --accent-color: #64ffda;
-  --nav-bg: rgba(10, 25, 47, 0.85);
-  --card-bg: #112240;
+   --bg-primary: #2c3e50;        /* Deep navy charcoal */
+  --bg-secondary: #bdc3c7;      /* Soft silver-gray */
+  --text-primary: #ecf0f1;      /* Light ivory white */
+  --text-secondary: #95a5a6;    /* Muted gray for secondary text */
+  --accent-color: #e67e22;      /* Classic warm orange accent */
+  --nav-bg: rgba(44, 62, 80, 0.9); /* Subtle dark nav with transparency */
+  --card-bg: rgba(189, 195, 199, 0.15); /* Gentle gray overlay for cards */
   --container-padding: 2rem;
   --container-width: 1200px;
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .name-highlight {
-    background: linear-gradient(45deg, #00ffff, #ff00ff, #00ff00);
+    background: linear-gradient(45deg, #778da9, #94d2bd, #edafb8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -524,7 +524,7 @@ body {
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    background: linear-gradient(90deg, #6B7280, #4CAF50);
     border-radius: 4px;
     width: 0;
     transition: width 2s ease;
@@ -984,6 +984,263 @@ body {
     }
 }
 
+/* Education Section */
+.education {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #355070 0%, #778da9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(173, 217, 224, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(245, 203, 92, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(119, 141, 169, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.education-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #355070, #778da9, #aed9e0, #f5cb5c);
+    transform: translateX(-50%);
+}
+
+.education-item {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.education-item:nth-child(1) { animation-delay: 0.2s; }
+.education-item:nth-child(2) { animation-delay: 0.4s; }
+.education-item:nth-child(3) { animation-delay: 0.6s; }
+
+.education-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.education-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.education-year {
+    flex: 0 0 120px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f5cb5c;
+    background: rgba(53, 80, 112, 0.8);
+    padding: 10px 15px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(173, 217, 224, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.education-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(173, 217, 224, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.education-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(53, 80, 112, 0.3);
+    border-color: rgba(173, 217, 224, 0.5);
+}
+
+.education-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    transform: translateY(-50%);
+}
+
+.education-item:nth-child(odd) .education-content::before {
+    left: -30px;
+    border-right-color: rgba(255, 255, 255, 0.05);
+}
+
+.education-item:nth-child(even) .education-content::before {
+    right: -30px;
+    border-left-color: rgba(255, 255, 255, 0.05);
+}
+
+.education-content h3 {
+    font-size: 1.5rem;
+    color: #aed9e0;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.education-content h4 {
+    font-size: 1.1rem;
+    color: #778da9;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.institution {
+    font-size: 1.2rem;
+    color: #f5cb5c;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score {
+    font-size: 1.1rem;
+    color: #aed9e0;
+    font-weight: 600;
+    background: rgba(53, 80, 112, 0.3);
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.stream {
+    font-size: 0.95rem;
+    color: #778da9;
+    line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Education Section */
+@media (max-width: 768px) {
+    .education-timeline::before {
+        left: 30px;
+    }
+    
+    .education-item {
+        flex-direction: row !important;
+        margin-left: 60px;
+    }
+    
+    .education-year {
+        flex: 0 0 auto;
+        position: absolute;
+        left: -60px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    .education-content {
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .education-content::before {
+        left: -30px !important;
+        right: auto !important;
+        border-right-color: rgba(255, 255, 255, 0.05) !important;
+        border-left-color: transparent !important;
+    }
+    
+    .education-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .education-content h4 {
+        font-size: 1rem;
+    }
+    
+    .institution {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education {
+        padding: 60px 0;
+    }
+    
+    .education-timeline::before {
+        left: 20px;
+    }
+    
+    .education-item {
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .education-year {
+        left: -40px;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    .education-content {
+        padding: 15px;
+    }
+    
+    .education-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .education-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .institution {
+        font-size: 0.9rem;
+    }
+    
+    .score {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+    
+    .stream {
+        font-size: 0.85rem;
+    }
+}
+
 /* Learning Section */
 .learning {
     padding: 100px 0;
@@ -1036,8 +1293,8 @@ body {
 
 .learning-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
-    border-color: rgba(0, 255, 255, 0.5);
+    box-shadow: 0 20px 40px rgba(245, 203, 92, 0.2);
+    border-color: rgba(245, 203, 92, 0.5);
 }
 
 .learning-icon {
@@ -1049,30 +1306,30 @@ body {
 .icon-wrapper {
     width: 80px;
     height: 80px;
-    background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+    background: linear-gradient(45deg, rgba(245, 203, 92, 0.2), rgba(173, 217, 224, 0.2));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    border: 2px solid rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(245, 203, 92, 0.3);
     animation: iconPulse 3s ease-in-out infinite;
 }
 
 @keyframes iconPulse {
     0%, 100% { 
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-color) 40%, transparent);
     }
     50% { 
         transform: scale(1.05);
-        box-shadow: 0 0 0 10px rgba(0, 255, 255, 0);
+        box-shadow: 0 0 0 10px transparent;
     }
 }
 
 .learning-info h3 {
     font-size: 1.4rem;
-    color: #00ffff;
+    color: var(--accent-color);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -1124,7 +1381,7 @@ body {
 
 .progress-text {
     font-size: 0.9rem;
-    color: #00ffff;
+    color: #f5cb5c;
     font-weight: 600;
     text-align: center;
     display: block;
@@ -1155,11 +1412,11 @@ body {
 /* Project Placeholder Styles */
 .project-placeholder {
     height: 200px;
-    background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+    background: linear-gradient(45deg, rgba(245, 203, 92, 0.1), rgba(173, 217, 224, 0.1));
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dashed rgba(0, 255, 255, 0.3);
+    border: 2px dashed rgba(245, 203, 92, 0.3);
     border-radius: 10px;
 }
 
