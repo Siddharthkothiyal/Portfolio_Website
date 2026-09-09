@@ -2,373 +2,903 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Siddharth Kumar Kothiyal — Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#07090f" />
+  <meta name="color-scheme" content="dark" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Siddharth Kumar Kothiyal — Software Engineer | Full-Stack Developer</title>
+  <meta name="description" content="Software engineer building reliable full-stack products. React, Node.js, TypeScript, PostgreSQL, and AI-powered applications." />
+  <meta name="keywords" content="Siddharth Kumar Kothiyal, Software Engineer, Full Stack Developer, React, Node.js, TypeScript, Portfolio, Dehradun" />
+  <meta name="author" content="Siddharth Kumar Kothiyal" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Siddharth Kumar Kothiyal — Software Engineer" />
+  <meta property="og:description" content="Turning ideas into products that actually work. Full-stack developer building fast, reliable web & mobile applications." />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Siddharth Kumar Kothiyal — Software Engineer" />
+  <meta name="twitter:description" content="Turning ideas into products that actually work." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="#home">Come,Have a check and see what's in there.</a>
 
-      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- Ambient orbs -->
+  <div class="ambient-orb o1" aria-hidden="true"></div>
+  <div class="ambient-orb o2" aria-hidden="true"></div>
+  <div class="ambient-orb o3" aria-hidden="true"></div>
 
-      <nav id="navMenu" class="nav" role="navigation" aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#education">Education</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#learning">Current Learning</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">SK</span>
+        <span>Siddharth Kumar Kothiyal</span>
+      </a>
+
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#engineering">Engineering</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://github.com/Siddharthkothiyal" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.01 3.24 9.26 7.74 10.77.57.1.78-.25.78-.55 0-.27-.01-.99-.01-1.94-3.14.68-3.8-1.52-3.8-1.52-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.64 1.23 3.29.94.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.03 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.37s1.92.12 2.82.37c2.15-1.46 3.09-1.16 3.09-1.16.61 1.58.23 2.74.11 3.03.72.79 1.15 1.8 1.15 3.04 0 4.35-2.65 5.3-5.17 5.59.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.66.78.55 4.5-1.51 7.73-5.76 7.73-10.77C23.33 5.56 18.27.5 12 .5z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/siddharth-kumar-kothiyal-33257125a" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.74v20.52C0 23.22.79 24 1.77 24h20.45C23.21 24 24 23.22 24 22.26V1.74C24 .78 23.21 0 22.22 0z"/></svg>
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
+  <!-- MOBILE NAV OVERLAY -->
+  <div id="mobileNav" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <nav aria-label="Mobile">
+      <div class="mobile-nav-list">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#experience">Experience &amp; Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
   <main id="main">
-    <!-- HERO (only place with your photo) -->
-    <section id="home" class="hero section">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1 class="hero-title">Hello, I'm <strong>Siddharth Kumar Kothiyal</strong></h1>
-          <p class="hero-sub">Application Developer &amp; Creative Technologist</p>
-          <p class="lead">I build practical and reliable web &amp; mobile applications.I focus on clean code, good UX and Growth.</p>
-          <div class="cta">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-outline" href="https://drive.google.com/file/d/1J1WOQLrxyZYw5fe1uBzKIBahdzvDsFbz/view?usp=sharing" target="_blank" rel="noopener">Download CV</a>
+
+    <!-- ============= HERO ============= -->
+    <section id="home" class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <div class="hero-eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Available for new opportunities</span>
+          </div>
+
+          <h1 id="heroTitle" class="hero-title">
+            I build things that <span class="gradient">actually work.</span>
+          </h1>
+
+          <div class="hero-role">
+            <span>Siddharth Kumar Kothiyal</span>
+            <span class="sep">·</span>
+            <span>Software Engineer</span>
+            
+          </div>
+
+          <p class="hero-desc">
+            CS grad & full-stack developer. I turn “what if?” into “it works.”  &amp; 
+            I build, solve, and occasionally make bugs question their career choices.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">
+              View Projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              Let's Connect
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span>Find me on</span>
+            <div class="social-row">
+              <a class="icon-btn" href="https://github.com/Siddharthkothiyal" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.01 3.24 9.26 7.74 10.77.57.1.78-.25.78-.55 0-.27-.01-.99-.01-1.94-3.14.68-3.8-1.52-3.8-1.52-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.64 1.23 3.29.94.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.03 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.37s1.92.12 2.82.37c2.15-1.46 3.09-1.16 3.09-1.16.61 1.58.23 2.74.11 3.03.72.79 1.15 1.8 1.15 3.04 0 4.35-2.65 5.3-5.17 5.59.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.66.78.55 4.5-1.51 7.73-5.76 7.73-10.77C23.33 5.56 18.27.5 12 .5z"/></svg>
+              </a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/siddharth-kumar-kothiyal-33257125a" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.74v20.52C0 23.22.79 24 1.77 24h20.45C23.21 24 24 23.22 24 22.26V1.74C24 .78 23.21 0 22.22 0z"/></svg>
+              </a>
+              <a class="icon-btn" href="mailto:siddharthkothiyal30@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="hero-image">
-          <!-- only photo used in the whole site -->
-          <img src="./photos/Photosid.jpg" alt="Siddharth Kumar Kothiyal" class="profile-img">
+        <!-- Hero terminal visual -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="float-stat fs-1"><span class="led green"></span><b>build</b><span>passing</span></div>
+          <div class="float-stat fs-2"><span class="led violet"></span><b>deploy</b><span>ready</span></div>
+          <div class="float-stat fs-3"><span class="led blue"></span><b>api</b><span>200 ms</span></div>
+
+          <div class="terminal-wrap">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <div class="terminal-title">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                  siddharth@portfolio ~ / dev
+                </div>
+                <div style="width:58px"></div>
+              </div>
+              <div class="terminal-body" id="terminalBody" aria-label="Animated terminal showing code">
+
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">whoami</span></div>
+                <div class="t-line" style="margin-bottom:14px"><span class="t-ok">→</span> siddharth-kothiyal · software-engineer</div>
+
+                <div class="t-line"><span class="t-com">// initializing engineering workspace...</span></div>
+                <div class="t-line" style="margin-bottom:10px"><span class="t-ok">✓</span> environment configured</div>
+
+                <div class="t-line"><span class="t-kw">interface</span> <span class="t-type">Engineer</span> <span>{</span></div>
+                <div class="t-line" style="padding-left:16px"><span class="t-var">  name</span><span>: </span><span class="t-str">'Siddharth'</span><span>,</span></div>
+                <div class="t-line" style="padding-left:16px"><span class="t-var">  role</span><span>: </span><span class="t-str">'Full-Stack Developer'</span><span>,</span></div>
+                <div class="t-line" style="padding-left:16px"><span class="t-var">  stack</span><span>: [</span><span class="t-str">'React'</span>, <span class="t-str">'Node'</span>, <span class="t-str">'PostgreSQL'</span><span>],</span></div>
+                <div class="t-line" style="padding-left:16px"><span class="t-var">  ships</span><span>: </span><span class="t-kw">true</span><span>,</span></div>
+                <div class="t-line"><span>}</span></div>
+
+                <div style="height:12px"></div>
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> ./build --projects --optimize</span></div>
+                <div class="t-line"><span class="t-arrow">  compiling modules...</span></div>
+                <div class="t-line"><span class="t-ok">  ✓</span> government-connect <span style="color:var(--text-muted)">v1.2.0</span></div>
+                <div class="t-line"><span class="t-ok">  ✓</span> interview-prep-ai <span style="color:var(--text-muted)">v0.9.4</span></div>
+                <div class="t-line"><span class="t-ok">  ✓</span> image-hosting-app <span style="color:var(--text-muted)">v2.1.1</span></div>
+                <div class="t-line"><span class="t-ok">  ✓</span> career-portal <span style="color:var(--text-muted)">v1.0.0</span></div>
+                <div style="height:4px"></div>
+                <div class="t-line"><span class="t-ok">Build complete ·</span> <span class="t-num">0</span> errors · <span class="t-num">0</span> warnings<span class="t-cursor"></span></div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
+    <!-- ============= ABOUT ============= -->
+    <section id="about" class="section" aria-labelledby="aboutTitle">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <div class="reveal">
+          <div class="section-label">About</div>
+          <h2 id="aboutTitle" class="section-title">A developer who thinks in systems, ships in public.</h2>
+        </div>
+
         <div class="about-grid">
-          <div class="about-card">
-            <p>A B.Tech CSE graduate who builds web and mobile apps that load quickly, behave predictably, and don't randomly crash. I prioritize clean, scalable code and thoughtful User Experience.</p>
+          <div class="about-card reveal">
+            <div class="about-text">
+              <p>
+                I'm a <strong>B.Tech Computer Science graduate</strong> from Dehradun with a bias toward
+                building things end-to-end. I started writing code to understand how software actually
+                works under the hood — and that curiosity never really went away.
+              </p>
+              <p>
+                My approach to engineering is straightforward: <strong>understand the problem first,
+                write the minimum code required, then make it clean</strong>. I'd rather spend time
+                getting an architecture right once than patch something that was rushed out the door.
+              </p>
+              <p>
+                I pick up new tools quickly because I focus on fundamentals — patterns, protocols, and
+                data models — not just framework syntax. When something breaks, I read the stack trace
+                before I reach for Stack Overflow.
+              </p>
+            </div>
 
-            <ul class="about-list">
-              <li><strong>Location:</strong> Dehradun, India</li>
-              <li><strong>Email:</strong> <a href="mailto:siddharthkothiyal30@gmail.com">siddharthkothiyal30@gmail.com</a></li>
-              <li><strong>Phone:</strong> <a href="tel:+918755996027">+91 8755996027</a></li>
-            </ul>
+            <div class="about-facts">
+              <div><span>Location</span><span>Dehradun, India</span></div>
+              <div><span>Email</span><a href="mailto:siddharthkothiyal30@gmail.com">siddharthkothiyal30@gmail.com</a></div>
+              <div><span>Phone</span><a href="tel:+918755996027">+91 8755996027</a></div>
+              <div><span>Degree</span><span>B.Tech · CSE</span></div>
+            </div>
+          </div>
+
+          <div class="about-stats stagger">
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div class="stat-num" data-count="7">0</div>
+              <div class="stat-label">Shipped projects</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="stat-num" data-count="6">0</div>
+              <div class="stat-label">Languages</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div class="stat-num" data-count="4">0</div>
+              <div class="stat-label">Years learning CS</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="stat-num" style="font-size:1.6rem">9.6<span style="font-size:0.9rem; color:var(--text-tertiary)"> CGPA</span></div>
+              <div class="stat-label">Academic performance</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
+    <!-- ============= SKILLS ============= -->
+    <section id="skills" class="section" aria-labelledby="skillsTitle">
       <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="education-timeline">
-          <article class="education-card">
-            <div class="education-row">
-              <div class="education-meta">
-                <div class="education-year">2021 - 2025</div>
-                <div class="education-institute">Bachelor of Technology — Computer Science &amp; Engineering<br><span class="education-place">Uttaranchal University, Dehradun</span></div>
-              </div>
-              <div class="education-score">CGPA: 9.6</div>
-            </div>
-          </article>
+        <div class="reveal">
+          <div class="section-label">Skills &amp; Technologies</div>
+          <h2 id="skillsTitle" class="section-title">A practical toolkit for shipping real products.</h2>
+          <p class="section-subtitle">
+            Technologies I've used across real projects — from frontend interfaces and mobile apps to
+            databases, backend APIs, and AI integrations.
+          </p>
+        </div>
 
-          <article class="education-card">
-            <div class="education-row">
-              <div class="education-meta">
-                <div class="education-year">2020 - 2021</div>
-                <div class="education-institute">Class XII (PCM)<br><span class="education-place">Shri Guru Ram Rai Public School, Dehradun</span></div>
+        <div class="skills-wrap stagger">
+          <!-- Languages -->
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <div class="sg-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               </div>
-              <div class="education-score">CGPA: 8.4</div>
+              <h3>Languages</h3>
+              <span>06</span>
             </div>
-          </article>
+            <div class="chips">
+              <span class="chip"><span class="chip-dot"></span>Java</span>
+              <span class="chip"><span class="chip-dot"></span>TypeScript</span>
+              <span class="chip"><span class="chip-dot"></span>JavaScript</span>
+              <span class="chip"><span class="chip-dot"></span>C++</span>
+              <span class="chip"><span class="chip-dot"></span>C#</span>
+              <span class="chip"><span class="chip-dot"></span>PHP</span>
+            </div>
+          </div>
 
-          <article class="education-card">
-            <div class="education-row">
-              <div class="education-meta">
-                <div class="education-year">2018 - 2019</div>
-                <div class="education-institute">Class X<br><span class="education-place">Shri Guru Ram Rai Public School, Dehradun</span></div>
+          <!-- Frontend -->
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <div class="sg-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
               </div>
-              <div class="education-score">CGPA: 8.0</div>
+              <h3>Frontend</h3>
+              <span>04</span>
             </div>
-          </article>
+            <div class="chips">
+              <span class="chip"><span class="chip-dot"></span>React</span>
+              <span class="chip"><span class="chip-dot"></span>React Native</span>
+              <span class="chip"><span class="chip-dot"></span>Vite</span>
+              <span class="chip"><span class="chip-dot"></span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <div class="sg-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+              </div>
+              <h3>Backend</h3>
+              <span>02</span>
+            </div>
+            <div class="chips">
+              <span class="chip"><span class="chip-dot"></span>Node.js</span>
+              <span class="chip"><span class="chip-dot"></span>Express</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <div class="sg-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><ellipse cx="12" cy="10" rx="8" ry="4"/><path d="M4 10v4c0 2.21 3.58 4 8 4s8-1.79 8-4v-4"/><path d="M4 15v4c0 2.21 3.58 4 8 4s8-1.79 8-4v-4"/></svg>
+              </div>
+              <h3>Databases</h3>
+              <span>04</span>
+            </div>
+            <div class="chips">
+              <span class="chip"><span class="chip-dot"></span>PostgreSQL</span>
+              <span class="chip"><span class="chip-dot"></span>MySQL</span>
+              <span class="chip"><span class="chip-dot"></span>Supabase</span>
+              <span class="chip"><span class="chip-dot"></span>Firebase</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <div class="sg-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3>Tools &amp; Platforms</h3>
+              <span>05</span>
+            </div>
+            <div class="chips">
+              <span class="chip"><span class="chip-dot"></span>Git</span>
+              <span class="chip"><span class="chip-dot"></span>GitHub</span>
+              <span class="chip"><span class="chip-dot"></span>Docker</span>
+              <span class="chip"><span class="chip-dot"></span>VS Code</span>
+              <span class="chip"><span class="chip-dot"></span>Expo</span>
+            </div>
+          </div>
+
+          <!-- AI -->
+          <div class="skill-group">
+            <div class="skill-group-head">
+              <div class="sg-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v2h2a2 2 0 0 1 2 2v4h-2v2a6 6 0 0 1-12 0v-2H4v-4a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4z"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg>
+              </div>
+              <h3>AI &amp; Integrations</h3>
+              <span>01+</span>
+            </div>
+            <div class="chips">
+              <span class="chip"><span class="chip-dot"></span>Gemini API</span>
+              <span class="chip"><span class="chip-dot"></span>LLM Integration</span>
+              <span class="chip"><span class="chip-dot"></span>Prompt Engineering</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
+    <!-- ============= PROJECTS ============= -->
+    <section id="projects" class="section" aria-labelledby="projectsTitle">
       <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="reveal">
+          <div class="section-label">Featured Projects</div>
+          <h2 id="projectsTitle" class="section-title">What I've been building.</h2>
+          <p class="section-subtitle">
+            Real projects solving real problems — from government welfare platforms and AI interview
+            preparation to mobile apps, extensions, and developer tooling.
+          </p>
+        </div>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3 class="skill-title">Application Development</h3>
-            <div class="skill-list">
-              <div class="skill-item">
-                <div class="skill-head"><span>React Native</span><span class="skill-percent">70%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="70"></div></div>
+        <div class="projects-grid stagger">
+
+          <!-- 1. GOVERNMENT CONNECT (FEATURED) -->
+          <article class="project-card featured reveal" tabindex="0" aria-label="Government Connect project">
+            <div class="project-thumb">
+              <span class="project-featured">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Featured · Real-World Platform
+              </span>
+              <img src="./photos/GovtCONNECt.png" alt="Government Connect dashboard screenshot" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Government Connect</h3>
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noopener" aria-label="Live demo of Government Connect" title="Live Demo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
               </div>
-              <div class="skill-item">
-                <div class="skill-head"><span>Node.js</span><span class="skill-percent">85%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+              <div class="project-problem">Citizens cannot easily discover welfare schemes they qualify for.</div>
+              <p class="project-desc">
+                A full-stack welfare eligibility platform that helps Indian citizens discover, understand,
+                and track government schemes they are actually eligible for.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Rule-based eligibility engine</strong> for deterministic, auditable decisions — AI never independently determines eligibility.</li>
+                  <li><strong>Gemini AI integration</strong> powers scheme guidance, explanation assistance, and natural-language queries.</li>
+                  <li>Full authentication stack with JWT + bcrypt + Zod validation across REST API surface.</li>
+                  <li>Type-safe end-to-end: TypeScript on frontend, Prisma + PostgreSQL on backend.</li>
+                </ul>
               </div>
-              <div class="skill-item">
-                <div class="skill-head"><span>Supabase</span><span class="skill-percent">80%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+              <div class="project-tags">
+                <span class="ptag">React</span><span class="ptag">TypeScript</span><span class="ptag">Vite</span><span class="ptag">Tailwind CSS</span>
+                <span class="ptag">Zustand</span><span class="ptag">Node.js</span><span class="ptag">Express</span>
+                <span class="ptag">PostgreSQL</span><span class="ptag">Prisma</span><span class="ptag">JWT</span><span class="ptag">Zod</span><span class="ptag">Gemini AI</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="skill-card">
-            <h3 class="skill-title">Web Development</h3>
-            <div class="skill-list">
-              <div class="skill-item">
-                <div class="skill-head"><span>JavaScript</span><span class="skill-percent">95%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="95"></div></div>
+          <!-- 2. INTERVIEW PREP AI -->
+          <article class="project-card reveal" tabindex="0" aria-label="Interview Prep AI project">
+            <div class="project-thumb">
+              <img src="./photos/AImock.png" alt="Interview Prep AI app screenshot" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Interview Prep AI</h3>
+                <div class="project-links">
+                  <a href="https://drive.google.com/file/d/1tUVL1gql62lTOXxGGOzhpP4sEwKi_LmN/view?usp=drive_link" target="_blank" rel="noopener" aria-label="View demo" title="Demo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </a>
+                </div>
               </div>
-              <div class="skill-item">
-                <div class="skill-head"><span>React</span><span class="skill-percent">90%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="90"></div></div>
+              <div class="project-problem">Technical candidates need structured, AI-guided interview practice.</div>
+              <p class="project-desc">
+                Mobile product that delivers AI-driven mock interviews and personalised feedback
+                so developers can practise before the real conversation.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li>AI-powered mock interviews with adaptive questioning.</li>
+                  <li>Structured feedback after sessions targeting weak spots.</li>
+                  <li>Cross-platform mobile build with React Native + Expo.</li>
+                  <li>Persistent data &amp; auth via Supabase backend.</li>
+                </ul>
               </div>
-              <div class="skill-item">
-                <div class="skill-head"><span>HTML &amp; CSS</span><span class="skill-percent">95%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="95"></div></div>
+              <div class="project-tags">
+                <span class="ptag">React Native</span><span class="ptag">Expo</span><span class="ptag">Supabase</span><span class="ptag">Gemini AI</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="skill-card">
-            <h3 class="skill-title">Other Skills</h3>
-            <div class="skill-list">
-              <div class="skill-item">
-                <div class="skill-head"><span>Java</span><span class="skill-percent">80%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+          <!-- 3. IMAGE HOSTING & SHARING -->
+          <article class="project-card reveal" tabindex="0" aria-label="Image Hosting & Sharing App">
+            <div class="project-thumb">
+              <img src="./photos/ImageHost.jpg" alt="Image Hosting and Sharing app" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Image Hosting &amp; Sharing</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Siddharthkothiyal/Image-hosting-and-sharing-app.git" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.01 3.24 9.26 7.74 10.77.57.1.78-.25.78-.55 0-.27-.01-.99-.01-1.94-3.14.68-3.8-1.52-3.8-1.52-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.64 1.23 3.29.94.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.03 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.37s1.92.12 2.82.37c2.15-1.46 3.09-1.16 3.09-1.16.61 1.58.23 2.74.11 3.03.72.79 1.15 1.8 1.15 3.04 0 4.35-2.65 5.3-5.17 5.59.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.66.78.55 4.5-1.51 7.73-5.76 7.73-10.77C23.33 5.56 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
               </div>
-              <div class="skill-item">
-                <div class="skill-head"><span>Python</span><span class="skill-percent">75%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="75"></div></div>
+              <div class="project-problem">People need a fast, private way to store, edit and share photos.</div>
+              <p class="project-desc">
+                Full-stack mobile app for uploading, editing, organising, and sharing images with
+                fine-grained control over who sees what.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li>End-to-end image pipeline: upload, transformation, and storage.</li>
+                  <li>Sharing mechanics with link-based access controls.</li>
+                  <li>React Native + Expo for cross-platform delivery.</li>
+                  <li>Clean UX focused on the photographer's workflow.</li>
+                </ul>
               </div>
-              <div class="skill-item">
-                <div class="skill-head"><span>Data Structures</span><span class="skill-percent">85%</span></div>
-                <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+              <div class="project-tags">
+                <span class="ptag">React Native</span><span class="ptag">Expo</span><span class="ptag">Node.js</span><span class="ptag">Firebase</span>
               </div>
             </div>
-          </div>
+          </article>
+
+          <!-- 4. CHROME EXTENSION -->
+          <article class="project-card reveal" tabindex="0" aria-label="Chrome Extension project">
+            <div class="project-thumb">
+              <img src="./photos/ChromeExt.jpg" alt="Chrome extension screenshot" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Chrome Extension</h3>
+                <div class="project-links">
+                </div>
+              </div>
+              <div class="project-problem">Browser-native functionality missing from the web.</div>
+              <p class="project-desc">
+                Browser extension bringing in-page productivity tooling directly into the user's normal
+                browsing flow — no separate app to open.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li>Manifest V3 compatible extension architecture.</li>
+                  <li>Content scripts interacting safely with host pages.</li>
+                  <li>Persistent storage via chrome.storage APIs.</li>
+                  <li>Minimal UI footprint with clear user affordances.</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="ptag">JavaScript</span><span class="ptag">Manifest V3</span><span class="ptag">Chrome APIs</span><span class="ptag">HTML / CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. CAREER WEBSITE / GHARPADHARO -->
+          <article class="project-card reveal" tabindex="0" aria-label="GharPadharo Career Website">
+            <div class="project-thumb">
+              <img src="./photos/Screenshot 2025-07-17 130004.png" alt="Career website dashboard" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>GharPadharo · Career Portal</h3>
+                <div class="project-links">
+                  <a href="https://ghar-padhaaro-career-website.vercel.app/" target="_blank" rel="noopener" aria-label="Live site" title="Live Site">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-problem">Career listings needed a polished, modern application portal.</div>
+              <p class="project-desc">
+                Responsive career website for managing open roles and job applications with a cloud-backed
+                workflow and mobile-first interface.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li>Production React UI with responsive layouts.</li>
+                  <li>Cloud-based backend driving listings and submissions.</li>
+                  <li>Deployed on Vercel with CDN-accelerated delivery.</li>
+                  <li>Accessible forms for a wide audience of applicants.</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="ptag">React</span><span class="ptag">Vite</span><span class="ptag">Vercel</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. PATH FINDING SIMULATOR -->
+          <article class="project-card reveal" tabindex="0" aria-label="Path Finding Simulator">
+            <div class="project-thumb">
+              <img src="./photos/PathFinding.jpg" alt="Path Finding Simulator" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Path Finding Simulator</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Siddharthkothiyal/athFindingSimulator" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.01 3.24 9.26 7.74 10.77.57.1.78-.25.78-.55 0-.27-.01-.99-.01-1.94-3.14.68-3.8-1.52-3.8-1.52-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.64 1.23 3.29.94.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.03 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.37s1.92.12 2.82.37c2.15-1.46 3.09-1.16 3.09-1.16.61 1.58.23 2.74.11 3.03.72.79 1.15 1.8 1.15 3.04 0 4.35-2.65 5.3-5.17 5.59.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.66.78.55 4.5-1.51 7.73-5.76 7.73-10.77C23.33 5.56 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-problem">Learning pathfinding algorithms is easier when you can see them run.</div>
+              <p class="project-desc">
+                Interactive Java desktop visualisation of Dijkstra's algorithm and other classic path
+                finding routines, step by step.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li>Implemented Dijkstra's algorithm with priority queue optimisation.</li>
+                  <li>Grid-based visualisation rendering each frontier expansion live.</li>
+                  <li>Supports custom walls, source and target placement.</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="ptag">Java</span><span class="ptag">Swing UI</span><span class="ptag">Algorithms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. GIT-LIKE DSA PROJECT -->
+          <article class="project-card reveal" tabindex="0" aria-label="Git-like Content Addressable Storage">
+            <div class="project-thumb">
+              <img src="./photos/GithubLike.jpg" alt="Git-like content addressable storage project" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Content-Addressable Storage (Git-like)</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Siddharthkothiyal/-Content_addressable_storage_systemGitLike" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.01 3.24 9.26 7.74 10.77.57.1.78-.25.78-.55 0-.27-.01-.99-.01-1.94-3.14.68-3.8-1.52-3.8-1.52-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.64 1.23 3.29.94.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.03 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.37s1.92.12 2.82.37c2.15-1.46 3.09-1.16 3.09-1.16.61 1.58.23 2.74.11 3.03.72.79 1.15 1.8 1.15 3.04 0 4.35-2.65 5.3-5.17 5.59.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.66.78.55 4.5-1.51 7.73-5.76 7.73-10.77C23.33 5.56 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-problem">How does Git actually store commits and files? Build it to understand it.</div>
+              <p class="project-desc">
+                DSA-heavy Java project implementing a content-addressable storage system, including the
+                core init / add / commit primitives that Git itself is built on.
+              </p>
+              <div class="project-details">
+                <ul>
+                  <li>Objects stored under SHA-based content addresses.</li>
+                  <li>Staging, commit graph, and tree snapshots modelled correctly.</li>
+                  <li>Built from first principles — no Git libraries used.</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="ptag">Java</span><span class="ptag">SHA-1</span><span class="ptag">Merkle Trees</span><span class="ptag">DSA</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-
-    <section id="projects" class="section">
+    <!-- ============= ENGINEERING DASHBOARD ============= -->
+    <section id="engineering" class="section" aria-labelledby="engTitle">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+        <div class="reveal">
+          <div class="section-label">Engineering Focus</div>
+          <h2 id="engTitle" class="section-title">What I'm working on right now.</h2>
+          <p class="section-subtitle">
+            Instead of a generic "currently learning" list, this is a live look at the areas of
+            engineering I'm actively investing in.
+          </p>
+        </div>
 
-
-
-          <article class="project">
-            <div class="project-thumb"><img src="./photos/GovtCONNECt.png" alt="Goverment Connect"></div>
-            <div class="project-body">
-              <h3 class="project-title">Goverment Connect</h3>
-              <p class="project-desc">AI-powered government benefits discovery platform , Using React, enabling citizens to discover and track eligible welfare schemes.</p>
-              <div class="project-meta">
-                <span class="tag">React</span>
-                  <span class="tag">TypeScript </span>
-                  <span class="tag">Vite </span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">JWT</span>
-                    <span class="tag">Gemini AI </span>
-                      <span class="tag">PostgreSQL </span>
-
-                   
-                  
-                <a class="project-link" href="https://drive.google.com/file/d/1tUVL1gql62lTOXxGGOzhpP4sEwKi_LmN/view?usp=drive_link" target="_blank">View</a>
+        <div class="eng-grid stagger">
+          <div class="eng-card">
+            <div class="eng-card-head">
+              <div class="eng-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
               </div>
+              <span class="status-pill status-building"><span class="led"></span>BUILDING</span>
             </div>
-          </article>
+            <h3>Full-Stack Products</h3>
+            <p>Shipping end-to-end applications with TypeScript, React, Node, PostgreSQL — from data model to deployment.</p>
+            <div class="eng-bar"><div class="eng-bar-fill" data-fill="85"></div></div>
+          </div>
 
-
-           <article class="project">
-            <div class="project-thumb"><img src="./photos/AImock.png" alt="Goverment Connect"></div>
-            <div class="project-body">
-              <h3 class="project-title">Goverment Connect</h3>
-              <p class="project-desc">AI-powered government benefits discovery platform , Using React, enabling citizens to discover and track eligible welfare schemes.</p>
-              <div class="project-meta">
-                <span class="tag">React</span>
-                  <span class="tag">TypeScript </span>
-                  <span class="tag">Vite </span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">JWT</span>
-                    <span class="tag">Gemini AI </span>
-                      <span class="tag">PostgreSQL </span>
-
-                   
-                  
-                <a class="project-link" href="https://drive.google.com/file/d/1tUVL1gql62lTOXxGGOzhpP4sEwKi_LmN/view?usp=drive_link" target="_blank">View</a>
+          <div class="eng-card">
+            <div class="eng-card-head">
+              <div class="eng-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v2h2a2 2 0 0 1 2 2v4h-2v2a6 6 0 0 1-12 0v-2H4v-4a2 2 0 0 1 2-2h2V6a4 4 0 0 1 4-4z"/></svg>
               </div>
+              <span class="status-pill status-building"><span class="led"></span>BUILDING</span>
             </div>
-          </article>
+            <h3>AI-Powered Apps</h3>
+            <p>Integrating LLMs into real product flows where they genuinely help users — without pretending AI solves everything.</p>
+            <div class="eng-bar"><div class="eng-bar-fill" data-fill="78"></div></div>
+          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <article class="project">
-            <div class="project-thumb"><img src="./photos/AImock.png" alt="AI Interview Preparation App"></div>
-            <div class="project-body">
-              <h3 class="project-title">Interview Preparation App usin AI</h3>
-              <p class="project-desc">Mobile app for interview preparation with AI-driven mock interviews and Feedback features.</p>
-              <div class="project-meta">
-                <span class="tag">React Native</span>
-                  <span class="tag">SupaBase </span>
-                   
-                  
-                <a class="project-link" href="https://drive.google.com/file/d/1tUVL1gql62lTOXxGGOzhpP4sEwKi_LmN/view?usp=drive_link" target="_blank">View</a>
+          <div class="eng-card">
+            <div class="eng-card-head">
+              <div class="eng-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
               </div>
+              <span class="status-pill status-learning"><span class="led"></span>LEARNING</span>
             </div>
-          </article>
+            <h3>DSA &amp; Problem Solving</h3>
+            <p>Keeping data structures and algorithms sharp with regular, deliberate practice — the foundation underneath everything.</p>
+            <div class="eng-bar"><div class="eng-bar-fill" data-fill="70"></div></div>
+          </div>
 
-          <article class="project">
-            <div class="project-thumb"><img src="./photos/Screenshot%202025-07-17%20130004.png" alt="Career Website"></div>
-            <div class="project-body">
-              <h3 class="project-title">Career Website</h3>
-              <p class="project-desc">Career portal for managing applications with a cloud backend and responsive UI.</p>
-              <div class="project-meta">
-                <span class="tag">React.js</span>
-                <a class="project-link" href="https://ghar-padhaaro-career-website.vercel.app/" target="_blank">View</a>
+          <div class="eng-card">
+            <div class="eng-card-head">
+              <div class="eng-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h.01"/><path d="M7 20V4"/><path d="M12 20v-8"/><path d="M17 20v-4"/><path d="M22 20V10"/></svg>
               </div>
+              <span class="status-pill status-exploring"><span class="led"></span>EXPLORING</span>
             </div>
-          </article>
+            <h3>Product Engineering</h3>
+            <p>The craft of turning a messy feature request into a reliable release — UX, edge cases, tests, telemetry, and polish.</p>
+            <div class="eng-bar"><div class="eng-bar-fill" data-fill="65"></div></div>
+          </div>
 
-          <article class="project">
-            <div class="project-thumb"><img src="./photos/PathFinding.jpg" alt="Path Finding Simulator"></div>
-            <div class="project-body">
-              <h3 class="project-title">Path Finding Simulator</h3>
-              <p class="project-desc">Interactive visualization of pathfinding algorithms including Dijkstra's algorithm.</p>
-              <div class="project-meta">
-                <span class="tag">Java</span>
-                <a class="project-link" href="https://github.com/Siddharthkothiyal/athFindingSimulator" target="_blank">View</a>
+          <div class="eng-card">
+            <div class="eng-card-head">
+              <div class="eng-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
               </div>
+              <span class="status-pill status-exploring"><span class="led"></span>EXPLORING</span>
             </div>
-          </article>
+            <h3>System Design</h3>
+            <p>Understanding trade-offs — caching, queues, consistency, sharding — so architecture decisions don't come back to bite.</p>
+            <div class="eng-bar"><div class="eng-bar-fill" data-fill="55"></div></div>
+          </div>
 
-          <article class="project">
-            <div class="project-thumb"><img src="./photos/ImageHost.jpg" alt="Image Hosting and Sharing App"></div>
-            <div class="project-body">
-              <h3 class="project-title">Image Hosting and Sharing App</h3>
-              <p class="project-desc">Full-stack application for storing, editing, and sharing images.</p>
-              <div class="project-meta">
-                <span class="tag">React Native</span>
-                <a class="project-link" href="https://github.com/Siddharthkothiyal/Image-hosting-and-sharing-app.git" target="_blank">View</a>
+          <div class="eng-card">
+            <div class="eng-card-head">
+              <div class="eng-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
               </div>
+              <span class="status-pill status-learning"><span class="led"></span>LEARNING</span>
             </div>
-          </article>
+            <h3>Experimentation</h3>
+            <p>Constantly side-projecting new languages, patterns, deployment models — and throwing most of it away.</p>
+            <div class="eng-bar"><div class="eng-bar-fill" data-fill="80"></div></div>
+          </div>
+        </div>
 
-          <article class="project">
-            <div class="project-thumb"><img src="./photos/GithubLike.jpg" alt="Git-like Features using Java"></div>
-            <div class="project-body">
-              <h3 class="project-title">Git-like Features using Java</h3>
-              <p class="project-desc">DSA project implementing init/commit/add features using Java and SHA hashing.</p>
-              <div class="project-meta">
-                <span class="tag">Java</span>
-                <a class="project-link" href="https://github.com/Siddharthkothiyal/-Content_addressable_storage_systemGitLike" target="_blank">View</a>
-              </div>
+        <!-- Activity stream -->
+        <div class="activity-stream reveal">
+          <div class="act-head">
+            <h4>Recent activity <span style="color:var(--text-tertiary);font-weight:500;font-size:var(--fs-sm);">· visual signal, not live data</span></h4>
+            <span class="live-dot"><span class="d"></span>Design Element</span>
+          </div>
+          <div class="act-list">
+            <div class="act-row">
+              <span class="act-time">14:02</span>
+              <span class="act-event">Pushed <b>gov-connect</b> eligibility-rule updates</span>
+              <span class="act-tag">backend</span>
             </div>
-          </article>
+            <div class="act-row">
+              <span class="act-time">11:37</span>
+              <span class="act-event">Refactored shared UI components for <b>career portal</b></span>
+              <span class="act-tag">frontend</span>
+            </div>
+            <div class="act-row">
+              <span class="act-time">09:15</span>
+              <span class="act-event">Solved daily DSA problem · <b>graph traversal</b></span>
+              <span class="act-tag">dsa</span>
+            </div>
+            <div class="act-row">
+              <span class="act-time">yesterday</span>
+              <span class="act-event">Experimented with <b>Gemini structured output</b> mode</span>
+              <span class="act-tag">ai</span>
+            </div>
+            <div class="act-row">
+              <span class="act-time">2 days</span>
+              <span class="act-event">Published Chrome Extension <b>Manifest V3</b> migration notes</span>
+              <span class="act-tag">tooling</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CURRENT LEARNING -->
-    <section id="learning" class="section">
+    <!-- ============= EXPERIENCE + EDUCATION ============= -->
+    <section id="experience" class="section" aria-labelledby="expTitle">
       <div class="container">
-        <h2 class="section-title">Current Learning</h2>
-        <div class="learning-grid">
-          <div class="learning-card">
-            <h3>Machine Learning</h3>
-            <p>Exploring neural networks, computer vision and NLP. Tools: Python, TensorFlow, PyTorch.</p>
-          </div>
-          <div class="learning-card">
-            <h3>DevOps</h3>
-            <p>Working with Docker, Kubernetes and continuous deployment pipelines on cloud platforms.</p>
-          </div>
-          <div class="learning-card">
-            <h3>Mobile Development</h3>
-            <p>Deepening cross-platform skills with React Native, Expo and native tooling.</p>
-          </div>
+        <div class="reveal">
+          <div class="section-label">Experience &amp; Education</div>
+          <h2 id="expTitle" class="section-title">Teaching, learning, and a CS degree.</h2>
+          <p class="section-subtitle">
+            I've spent as much time explaining code as writing it — which has made me a clearer,
+            more patient engineer.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-grid">
-          <div class="contact-details">
-            <p><strong>Email:</strong> <a href="mailto:siddharthkothiyal30@gmail.com">siddharthkothiyal30@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+918755996027">+91 8755996027</a></p>
-            <p><strong>Location:</strong> Dehradun, India</p>
-            <div class="social-small">
-              <a href="https://www.linkedin.com/in/siddharth-kumar-kothiyal-33257125a" target="_blank" style="color: blue ">LinkedIn</a>
-              <a href="https://github.com/Siddharthkothiyal" target="_blank" style="color: blue; ">GitHub</a>
+        <div class="timeline stagger">
+
+          <!-- Teaching experience -->
+          <div class="tl-item">
+            <div class="tl-date">Teaching · Programming</div>
+            <div class="tl-card">
+              <h3>Programming Tutor &amp; Instructor</h3>
+              <div class="tl-org">
+                <span>Dehradun · Computer Science</span>
+                <span class="sep">·</span>
+                <span>Teaching &amp; Mentorship</span>
+              </div>
+              <p>
+                Taught programming fundamentals and practical development to other students and
+                learners. Breaking concepts down for someone else has a funny way of showing you
+                the gaps in your own understanding.
+              </p>
+              <ul>
+                <li>Learned how to communicate technical ideas clearly, in plain language.</li>
+                <li>Became better at decomposing complex problems into smaller, teachable steps.</li>
+                <li>Adapted explanations for different learning speeds and backgrounds.</li>
+                <li>Went from knowing a concept to truly internalising it — because I had to.</li>
+              </ul>
             </div>
           </div>
 
-          <form id="contactForm" class="contact-form" novalidate>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
+          <!-- B.Tech -->
+          <div class="tl-item">
+            <div class="tl-date">2021 — 2025</div>
+            <div class="tl-card">
+              <h3>B.Tech · Computer Science &amp; Engineering</h3>
+              <div class="tl-org">
+                <span>Uttaranchal University, Dehradun</span>
+                <span class="sep">·</span>
+                <span class="score">CGPA 9.6</span>
+              </div>
+              <p>
+                Four-year engineering degree covering data structures, algorithms, databases,
+                operating systems, networking, compilers, and software engineering. Strong
+                performance track record across the programme.
+              </p>
+            </div>
+          </div>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
+          <!-- Class XII -->
+          <div class="tl-item">
+            <div class="tl-date">2020 — 2021</div>
+            <div class="tl-card">
+              <h3>Class XII · Physics, Chemistry, Mathematics</h3>
+              <div class="tl-org">
+                <span>Shri Guru Ram Rai Public School, Dehradun</span>
+                <span class="sep">·</span>
+                <span class="score">CGPA 8.4</span>
+              </div>
+              <p>Senior secondary schooling with a PCM (Physics, Chemistry, Maths) stream — the start of the formal technical path.</p>
+            </div>
+          </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+          <!-- Class X -->
+          <div class="tl-item">
+            <div class="tl-date">2018 — 2019</div>
+            <div class="tl-card">
+              <h3>Class X · Secondary School</h3>
+              <div class="tl-org">
+                <span>Shri Guru Ram Rai Public School, Dehradun</span>
+                <span class="sep">·</span>
+                <span class="score">CGPA 8.0</span>
+              </div>
+              <p>Completed matriculation with solid foundational performance across all subjects.</p>
+            </div>
+          </div>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
         </div>
       </div>
     </section>
+
+    <!-- ============= CONTACT ============= -->
+    <section id="contact" class="section" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-wrap reveal">
+          <div class="contact-inner">
+            <h2 id="contactTitle">Have an idea worth <em>building</em>?</h2>
+            <p class="contact-sub">
+              I'm always open to a conversation about an interesting product problem, an engineering
+              role, or a collaboration that actually ships something useful.
+            </p>
+
+            <div class="contact-row">
+              <a href="mailto:siddharthkothiyal30@gmail.com" class="contact-item">
+                <span class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                </span>
+                <span class="ci-text">
+                  <span>Email</span>
+                  <b>siddharthkothiyal30@gmail.com</b>
+                </span>
+              </a>
+
+              <a href="https://github.com/Siddharthkothiyal" target="_blank" rel="noopener" class="contact-item">
+                <span class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.01 3.24 9.26 7.74 10.77.57.1.78-.25.78-.55 0-.27-.01-.99-.01-1.94-3.14.68-3.8-1.52-3.8-1.52-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.64 1.23 3.29.94.1-.73.39-1.23.71-1.51-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.03 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.37s1.92.12 2.82.37c2.15-1.46 3.09-1.16 3.09-1.16.61 1.58.23 2.74.11 3.03.72.79 1.15 1.8 1.15 3.04 0 4.35-2.65 5.3-5.17 5.59.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.66.78.55 4.5-1.51 7.73-5.76 7.73-10.77C23.33 5.56 18.27.5 12 .5z"/></svg>
+                </span>
+                <span class="ci-text">
+                  <span>GitHub</span>
+                  <b>@Siddharthkothiyal</b>
+                </span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/siddharth-kumar-kothiyal-33257125a" target="_blank" rel="noopener" class="contact-item">
+                <span class="ci-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.74v20.52C0 23.22.79 24 1.77 24h20.45C23.21 24 24 23.22 24 22.26V1.74C24 .78 23.21 0 22.22 0z"/></svg>
+                </span>
+                <span class="ci-text">
+                  <span>LinkedIn</span>
+                  <b>Siddharth Kumar Kothiyal</b>
+                </span>
+              </a>
+            </div>
+
+            <a class="btn btn-primary" href="mailto:siddharthkothiyal30@gmail.com">
+              Let's build something useful
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small></small>
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container foot-inner">
+      <div class="foot-brand">
+        <span class="brand-mark" aria-hidden="true" style="width:26px;height:26px;font-size:11px">SK</span>
+        <span>Siddharth Kumar Kothiyal </span>
+      </div>
+      <div class="foot-links">
+        <a href="#home">Back to top ↑</a>
+        <a href="https://github.com/Siddharthkothiyal" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/siddharth-kumar-kothiyal-33257125a" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
